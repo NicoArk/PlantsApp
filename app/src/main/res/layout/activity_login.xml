@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity2"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:text="@string/signup_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_login"
+    android:layout_width="0dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:padding="16dp"
+    android:textAllCaps="false"
+    app:cornerRadius="35dp"
+    app:layout_constraintBottom_toTopOf="@id/tv_signup"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:backgroundTint="#A63B3B"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:fontFamily="sans-serif"
+
+
+    />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:letterSpacing="0.1"
+        android:text="Welcome Back :)"
+        app:layout_constraintBottom_toTopOf="@id/tv_login"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#611616"/>
+
+<TextView
+    android:id="@+id/tv_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:text="Login to your account :3"
+    app:layout_constraintBottom_toTopOf="@id/et_username"
+    android:textStyle="italic"
+    android:textSize="20sp"
+    android:layout_marginBottom="64dp"/>
+
+
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/et_password"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:hint="Full Name"
+        android:backgroundTint="#B71C1C"
+        android:background="@drawable/bg_corner"
+        android:padding="12dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="#33691E"
+        android:textColorHint="#A89090"
+        android:textColor="#84CD44"
+        android:layout_marginBottom="8dp"
+        />
+
+<EditText
+    android:id="@+id/et_password"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginBottom="50dp"
+    android:inputType="textPassword"
+    app:layout_constraintBottom_toTopOf="@id/btn_login"
+    android:drawableStart="@drawable/ic_baseline_lock_24"
+    android:hint="Password"
+    android:background="@drawable/bg_corner"
+    android:backgroundTint="#B71C1C"
+    android:padding="12dp"
+    android:drawablePadding="10dp"
+    android:drawableTint="#33691E"
+    android:textColorHint="#A89090"
+    android:textColor="#84CD44"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
